@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+.navbar{
+    background-image: linear-gradient(to right, #f1e3eb, #31363F);
+    /* background-color: #31363F; */
+}
+.navbar-brand img{
+width: 140px;
+display: flex;
+align-items: center;
+}
+.navbar-second-container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    
+}

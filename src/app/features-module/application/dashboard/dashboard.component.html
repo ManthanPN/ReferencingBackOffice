@@ -1,9 +1,22 @@
 <div class="main-container">
-    <div class="container">
-        <h4 class="text-center my-1">Application status</h4>
-        <form [formGroup]="myForm"  (ngSubmit)="onSubmit()">
-            <pib-form [model]="model" [fields]="fields" [options]="options" [form]="myForm"></pib-form>
-            <button class="btn btn-success btn-sm">Submit</button>
-        </form>
+  <div class="container">
+    <h4 class="text-center my-1">Application status</h4>
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+      <pib-form
+        [model]="model"
+        [fields]="fields"
+        [options]="options"
+        [form]="myForm"
+      ></pib-form>
+      <!-- <div class="my-2">
+                 <button class="btn btn-success btn-sm">Submit</button>
+            </div> -->
+    </form>
+    <div class="work-pull my-2">
+      <div class="workpull-counter">
+        <div class="counter-title"><h4>Title</h4></div>
+        <div class="counter"><h5>2</h5></div>
+      </div>
     </div>
+  </div>
 </div>

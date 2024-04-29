@@ -1,0 +1,21 @@
+.search-btn{
+    background-image: url("../../../../assets/search.svg");
+    width: 20px;
+    
+}
+.work-pull{
+    display: flex;
+    flex-direction: row;
+}
+.workpull-counter{
+    height: 50px;
+    width: 120px;
+    border: 1px solid rgb(171, 185, 228);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10px;
+    
+    }

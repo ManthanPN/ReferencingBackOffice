@@ -1,0 +1,15 @@
+.navbar{
+    background-image: linear-gradient(to right, #f1e3eb, #31363F)!important;
+    /* background-color: #31363F; */
+}
+.navbar-brand img{
+width: 140px;
+display: flex;
+align-items: center;
+}
+.navbar-second-container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    
+}

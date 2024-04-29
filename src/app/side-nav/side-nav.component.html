@@ -1,7 +1,7 @@
 <div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''" >
     <div class="logo-container">
         <img src="../../assets/arrow-right.svg" *ngIf="!collapsed" style="width:30px" (click)="toggleCollapse()" data-bs-toggle="tooltip" data-bs-placement="right" title="Expand sidebar" />
-         <img src="../../assets/arrow-left.svg" class="btn-close" style="width:30px"   *ngIf="collapsed" (click)="closeSidenav()" data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse sidebar"/>
+         <img src="../../assets/arrow-left.svg"  style="width:30px;"   *ngIf="collapsed" (click)="closeSidenav()" data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse sidebar"/>
        
     </div>
     <div class="scrollwrap scrollwrap_delayed">
@@ -35,16 +35,36 @@
                     ></app-sublevel-menu>
                 </div> -->
             </li>
-            <!-- <li class="sidenav-nav-item">
+            <li class="sidenav-nav-item">
                 <a class="sidenav-nav-link" href="#">
-                    <img src="../../assets/bar-chart.svg" class="sidenav-link-icon"/>
+                    <img src="../../assets/list.svg" class="sidenav-link-icon"/>
                     <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
-                       Product
+                       Properties
                     </span>
-                    <img src="../../assets/chevron-right.svg" *ngIf="collapsed" class="menu-collapse-icon"> //*ngIf="data.items && collapsed" class="menu-collapse-icon"
+                    <!-- <img src="../../assets/chevron-right.svg" *ngIf="collapsed" class="menu-collapse-icon"> //*ngIf="data.items && collapsed" class="menu-collapse-icon" -->
                 </a>
 
-            </li> -->
+            </li>
+            <li class="sidenav-nav-item">
+                <a class="sidenav-nav-link" href="#">
+                    <img src="../../assets/person.svg" class="sidenav-link-icon"/>
+                    <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
+                       Employer
+                    </span>
+                    <!-- <img src="../../assets/chevron-right.svg" *ngIf="collapsed" class="menu-collapse-icon"> //*ngIf="data.items && collapsed" class="menu-collapse-icon" -->
+                </a>
+
+            </li>
+            <li class="sidenav-nav-item">
+                <a class="sidenav-nav-link" href="#">
+                    <img src="../../assets/person-badge.svg" class="sidenav-link-icon"/>
+                    <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
+                       Agent
+                    </span>
+                    <!-- <img src="../../assets/chevron-right.svg" *ngIf="collapsed" class="menu-collapse-icon"> //*ngIf="data.items && collapsed" class="menu-collapse-icon" -->
+                </a>
+
+            </li>
         </ul>
     </div>
 </div>

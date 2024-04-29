@@ -1,3 +1,9 @@
 <div class="main-container">
-    <h3>Dashboard</h3>
+    <div class="container">
+        <h4 class="text-center my-1">Application status</h4>
+        <form [formGroup]="myForm"  (ngSubmit)="onSubmit()">
+            <pib-form [model]="model" [fields]="fields" [options]="options" [form]="myForm"></pib-form>
+            <button class="btn btn-success btn-sm">Submit</button>
+        </form>
+    </div>
 </div>

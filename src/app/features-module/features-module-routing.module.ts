@@ -5,6 +5,18 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./application/application.module').then(m => m.ApplicationModule)
+  },
+  {
+    path: 'properties',
+    loadChildren: () => import('./properties/properties.module').then(m => m.PropertiesModule)
+  },
+  {
+    path: 'employer',
+    loadChildren: () => import('./employer/employer.module').then(m => m.EmployerModule)
+  },
+  {
+    path: 'agent',
+    loadChildren: () => import('./agent/agent.module').then(m => m.AgentModule)
   }
 ];
 
